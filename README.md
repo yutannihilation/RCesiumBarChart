@@ -1,6 +1,8 @@
 Cesium.js for R
 ===============
 
+Note that this package is mainly for the proof of concept. Do not expect everything works fine!
+
 ## Installation
 
 ```r
