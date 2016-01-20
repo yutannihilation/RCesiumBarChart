@@ -1,0 +1,14 @@
+Package: cesiumr
+Type: Package
+Title: Cesium.js for R
+Version: 0.1.0
+Author: Hiroaki Yutani
+Maintainer: Hiroaki Yutani <yutani.ini@gmail.com>
+Description:
+  An experimental package to use Cesium.js for R. Please note that the main purpose of this package is for proof of concept.
+License: MIT + LICENSE
+Imports:
+  htmlwidgets,
+  scales
+LazyData: TRUE
+RoxygenNote: 5.0.1
