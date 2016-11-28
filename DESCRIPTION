@@ -1,7 +1,7 @@
-Package: cesiumr
+Package: RCesiumBarChart
 Type: Package
 Title: Cesium.js for R
-Version: 0.1.0
+Version: 0.0.1
 Author: Hiroaki Yutani
 Maintainer: Hiroaki Yutani <yutani.ini@gmail.com>
 Description:

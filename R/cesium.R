@@ -35,14 +35,14 @@
 #' "tbl", "data.frame"), row.names = c(NA, -47L), .Names = c("lon",
 #' "lat", "value"))
 #'
-#' cesium(d)
+#' cesium_bar(d)
 #'
 #' @param x data.frame with columns named \code{lon}, \code{lat}, and \code{value}
 #' @param width width
 #' @param height height
 #'
 #' @export
-cesium <- function(x, width = NULL, height = NULL) {
+cesium_bar <- function(x, width = NULL, height = NULL) {
 
   # rescale for the case when the values are too small to show
   x$value <- scales::rescale(x$value, to = c(0, 10e+5))
@@ -53,7 +53,7 @@ cesium <- function(x, width = NULL, height = NULL) {
     x,
     width = width,
     height = height,
-    package = 'cesiumr'
+    package = 'RCesiumBarChart'
   )
 }
 
@@ -75,7 +75,7 @@ cesium <- function(x, width = NULL, height = NULL) {
 #'
 #' @export
 cesiumOutput <- function(outputId, width = '100%', height = '400px'){
-  shinyWidgetOutput(outputId, 'cesium', width, height, package = 'cesiumr')
+  shinyWidgetOutput(outputId, 'cesium', width, height, package = 'RCesiumBarChart')
 }
 
 #' @rdname cesium-shiny
